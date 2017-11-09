@@ -1,0 +1,4 @@
+{
+  "extends": "",
+  "parserOptions": { "ecmaVersion": 6 }
+}
