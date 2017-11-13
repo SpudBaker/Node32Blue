@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n    <span>32 Blue</span>\n    <span class=\"fill-remaining-space\"></span>\n    <span>Logo</span>\n</mat-toolbar>\n<mat-sidenav-container>\n<mat-sidenav mode=\"side\" opened=\"true\" disableClose>\n  <!-- sidenav content -->\n  <div>\n    <a mat-button class=\"button-width\" routerLink = \"home\">Home</a><br/>\n    <a mat-button class=\"button-width\" routerLink = \"company\">Company</a><br/>\n    <a mat-button class=\"button-width\">Services</a><br/>\n    <a mat-button class=\"button-width\">References</a><br/>\n  </div>\n</mat-sidenav>\n\n<!-- primary content -->\n<div class=\"my-content\"><router-outlet></router-outlet></div>\n</mat-sidenav-container>\n\n\n"
+module.exports = "<mat-toolbar color=\"primary\">\n    <span>32 Blue</span>\n    <span class=\"fill-remaining-space\"></span>\n    <span>Logo</span>\n</mat-toolbar>\n<mat-sidenav-container>\n<mat-sidenav mode=\"side\" opened=\"true\" disableClose>\n  <!-- sidenav content -->\n  <div>\n    <a mat-button class=\"button-width\" routerLink = \"home\">Home</a><br/>\n    <a mat-button class=\"button-width\" routerLink = \"company\">Company</a><br/>\n    <a mat-button class=\"button-width\">Services</a><br/>\n    <a mat-button class=\"button-width\">References</a><br/>\n  </div>\n</mat-sidenav>\n<!-- primary content -->\n  <div class=\"fill-content\"><router-outlet></router-outlet></div>\n</mat-sidenav-container>\n\n\n"
 
 /***/ }),
 
@@ -87,7 +87,7 @@ var appRoutes = [
     { path: 'company', component: __WEBPACK_IMPORTED_MODULE_6__company_company_component__["a" /* CompanyComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
     { path: '',
-        redirectTo: '/company',
+        redirectTo: '/home',
         pathMatch: 'full'
     },
     { path: '**', component: __WEBPACK_IMPORTED_MODULE_7__pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */] }
@@ -125,7 +125,7 @@ var AppModule = (function () {
 /***/ "../../../../../src/app/company/company.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br/>\r\n<br/>\r\n<div style=\"width:600px; margin:0 auto;\">\r\n    32 Blue deliver data-driven bespoke cloud based business applications for the SME market.<br/><br/>\r\n\r\n    Applications that are;\r\n\r\n    <ul>\r\n        <li>Designed to run in a browser</li>\r\n        <li>Mobile device and PC capable</li>\r\n        <li>Secure</li>\r\n        <li>Without software licensing costs</li>\r\n        <li>Optimised for responsiveness.</li>\r\n    </ul>\r\n</div>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>"
+module.exports = "<br/>\r\n<br/>\r\nghjhdfguioipkljhgggcvhj"
 
 /***/ }),
 
@@ -161,7 +161,7 @@ var CompanyComponent = (function () {
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<p style=\"text-align:center\"><img src=\"assets/Business-Systems.jpg\"/></p>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>"
+module.exports = "<div>\r\n<br/>\r\n    32 Blue delivers cost effective, reliable IT solutions for the SME market. Applications that are;\r\n\r\n    <ul>\r\n        <li>Designed to run in a browser using the latest technologies</li>\r\n        <li>Cloud based</li>\r\n        <li>Mobile device and PC capable</li>\r\n        <li>Highly functional and data driven</li>\r\n        <li>Secure</li>\r\n        <li>Without software installation and licensing costs</li>\r\n        <li>Capable of supporting any number of users simultaneously</li>\r\n        <li>Optimised for speed and responsiveness allowing for a great user experience</li>\r\n    </ul>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n</div>"
 
 /***/ }),
 
