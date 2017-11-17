@@ -132,8 +132,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MatSidenavModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["c" /* MatToolbarModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MatButtonModule */]
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MatButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["c" /* MatTabsModule */]
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
@@ -149,7 +150,7 @@ var AppModule = (function () {
 /***/ "../../../../../src/app/company/company.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        32 Blue builds high quality, affordable, low maintenance business applications for the SME market. \r\n        <br/>\r\n        <br/>\r\n        The company was formed in 2017 by Richard Baker, BSc(Hons), Prince 2 practitioner and ITIL expert. \r\n        Richard has worked in IT for 20 years in Blue Chip and SME organisations most recently as a Head of IT. \r\n    <br/>\r\n    <br/>\r\n        The characteristics that set 32 Blue apart are:<br/> \r\n        <ul>\r\n            <li>Customer engagement is key</li>\r\n            <li>Solutions must not be just functionally rich but must also be responsive, available, and trouble free allowing for satisfied and effective users</li>\r\n            <li>Use of enterpise standard open-source technology</li>\r\n            <li>Quality is vital</li>\r\n            <li>A transparent cost and delivery model with appropriate project management</li>\r\n        </ul>\r\n</div>"
+module.exports = "<mat-tab-group>\r\n    <mat-tab>\r\n        <div class=\"tab-content\">\r\n            32 Blue builds high quality, affordable, low maintenance business applications for the SME market. \r\n            <br/>\r\n            <br/>\r\n            The company was formed in 2017 by Richard Baker, BSc(Hons), Prince 2 practitioner and ITIL expert. \r\n            Richard has worked in IT for 20 years in Blue Chip and SME organisations most recently as a Head of IT. \r\n            <br/>\r\n            <br/>\r\n            The characteristics that set 32 Blue apart are:<br/> \r\n            <ul>\r\n                <li>Customer engagement is key</li>\r\n                <li>Solutions must not be just functionally rich but must also be responsive, available, and trouble free allowing for satisfied and effective users</li>\r\n                <li>Use of enterpise standard open-source technology</li>\r\n                <li>Quality is vital</li>\r\n                <li>A transparent cost and delivery model with appropriate project management</li>\r\n            </ul>\r\n        </div>\r\n    </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -185,7 +186,7 @@ var CompanyComponent = (function () {
 /***/ "../../../../../src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        Contact\r\n</div>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab>\r\n                <div class=\"tab-content\">\r\n                        Contacts\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -221,7 +222,7 @@ var ContactComponent = (function () {
 /***/ "../../../../../src/app/examples/examples.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        Examples\r\n</div>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab>\r\n                <div class=\"tab-content\">\r\n                        Examples\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -257,7 +258,7 @@ var ExamplesComponent = (function () {
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    32 Blue delivers cost effective, reliable IT solutions for the SME market. Applications that are;\r\n\r\n    <ul>\r\n        <li>Designed to run in a browser using the latest technologies</li>\r\n        <li>Cloud based</li>\r\n        <li>Mobile device and PC capable</li>\r\n        <li>Highly functional and data driven</li>\r\n        <li>Secure</li>\r\n        <li>Without software installation and licensing costs</li>\r\n        <li>Capable of supporting any number of users simultaneously</li>\r\n        <li>Optimised for speed and responsiveness allowing for a great user experience</li>\r\n    </ul>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n</div>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab>\r\n            <div class=\"tab-content\">\r\n                Do you require a cost effective, reliable IT solution? 32 Blue create applications for the SME market that are;\r\n                \r\n                    <ul>\r\n                        <li>Designed to run in a browser using the latest technologies</li>\r\n                        <li>Cloud based</li>\r\n                        <li>Optimised for PC and mobile devices</li>\r\n                        <li>Highly functional and data driven</li>\r\n                        <li>Secure</li>\r\n                        <li>Without software installation and licensing costs</li>\r\n                        <li>Capable of supporting any number of users simultaneously</li>\r\n                        <li>Optimised for speed and responsiveness allowing for a great user experience</li>\r\n                    </ul>\r\n                <br/>\r\n                <br/>\r\n                <br/>\r\n                <br/>\r\n                <br/>\r\n            </div>\r\n        </mat-tab>\r\n</mat-tab-group>\r\n    \r\n"
 
 /***/ }),
 
@@ -293,7 +294,7 @@ var HomeComponent = (function () {
 /***/ "../../../../../src/app/method/method.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        Method\r\n</div>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab>\r\n                <div class=\"tab-content\">\r\n                        Method\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -365,7 +366,7 @@ var PageNotFoundComponent = (function () {
 /***/ "../../../../../src/app/references/references.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        References\r\n</div>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab>\r\n                <div class=\"tab-content\">\r\n                        References\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -401,7 +402,7 @@ var ReferencesComponent = (function () {
 /***/ "../../../../../src/app/services/services.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n       Services\r\n</div>"
+module.exports = "<mat-tab-group class=\"demo-tab-group\">\r\n    <mat-tab label=\"Business Analysis\">\r\n        <div class=\"tab-content\">\r\n            Analysis\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Database\">\r\n        <div class=\"tab-content\">\r\n            Database Design\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Application\">\r\n        <div class=\"tab-content\">\r\n            Build\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Data Migration\">\r\n        <div class=\"tab-content\">\r\n            Data Migration\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Documentation\">\r\n        <div class=\"tab-content\">\r\n            Documentation\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Support\">\r\n        <div class=\"tab-content\">\r\n            Support\r\n        </div>\r\n    </mat-tab>\r\n    <mat-tab label=\"Mobile \">\r\n        <div class=\"tab-content\">\r\n            Apps\r\n        </div>\r\n    </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -437,7 +438,7 @@ var ServicesComponent = (function () {
 /***/ "../../../../../src/app/technology/technology.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n        Technology\r\n</div>"
+module.exports = "<mat-tab-group class=\"demo-tab-group\">\r\n        <mat-tab label=\"Database\">\r\n                <div class=\"tab-content\">\r\n                        stuff about databases\r\n                </div>\r\n        </mat-tab>\r\n        <mat-tab label=\"Authentication\">\r\n                <div class=\"tab-content\">\r\n                        stuff about authentication\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>\r\n                        \r\n"
 
 /***/ }),
 
