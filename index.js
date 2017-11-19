@@ -1,9 +1,10 @@
 'use strict';
 
-var express = require('express');
-var app = express();
-var cors = require('cors');
-var bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
+const staticServe = express.static(`${ __dirname }/public`);
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -18,10 +19,8 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.use(express.static(__dirname + '/public'));
-app.get('/', (request, response) => {
-  response.render('index');
-});
+app.use("/", staticServe);
+app.use("*", staticServe);
 
 app.listen(app.get('port'), () => {
   console.log('Node app is running on port', app.get('port'));
