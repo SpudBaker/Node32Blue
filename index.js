@@ -19,6 +19,7 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+require('./lib/rest-countries.js')(app);
 app.use("/", staticServe);
 app.use("*", staticServe);
 
