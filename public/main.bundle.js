@@ -64,16 +64,17 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__company_company_component__ = __webpack_require__("../../../../../src/app/company/company.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pageNotFound_pageNotFound_component__ = __webpack_require__("../../../../../src/app/pageNotFound/pageNotFound.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_services_component__ = __webpack_require__("../../../../../src/app/services/services.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__technology_technology_component__ = __webpack_require__("../../../../../src/app/technology/technology.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__method_method_component__ = __webpack_require__("../../../../../src/app/method/method.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__examples_examples_component__ = __webpack_require__("../../../../../src/app/examples/examples.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__references_references_component__ = __webpack_require__("../../../../../src/app/references/references.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_Http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__company_company_component__ = __webpack_require__("../../../../../src/app/company/company.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pageNotFound_pageNotFound_component__ = __webpack_require__("../../../../../src/app/pageNotFound/pageNotFound.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_services_component__ = __webpack_require__("../../../../../src/app/services/services.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__technology_technology_component__ = __webpack_require__("../../../../../src/app/technology/technology.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__method_method_component__ = __webpack_require__("../../../../../src/app/method/method.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__examples_examples_component__ = __webpack_require__("../../../../../src/app/examples/examples.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__references_references_component__ = __webpack_require__("../../../../../src/app/references/references.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -95,20 +96,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
-    { path: 'company', component: __WEBPACK_IMPORTED_MODULE_6__company_company_component__["a" /* CompanyComponent */] },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */] },
-    { path: 'services', component: __WEBPACK_IMPORTED_MODULE_9__services_services_component__["a" /* ServicesComponent */] },
-    { path: 'technology', component: __WEBPACK_IMPORTED_MODULE_10__technology_technology_component__["a" /* TechnologyComponent */] },
-    { path: 'method', component: __WEBPACK_IMPORTED_MODULE_11__method_method_component__["a" /* MethodComponent */] },
-    { path: 'examples', component: __WEBPACK_IMPORTED_MODULE_12__examples_examples_component__["a" /* ExamplesComponent */] },
-    { path: 'references', component: __WEBPACK_IMPORTED_MODULE_13__references_references_component__["a" /* ReferencesComponent */] },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__["a" /* ContactComponent */] },
+    { path: 'company', component: __WEBPACK_IMPORTED_MODULE_7__company_company_component__["a" /* CompanyComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */] },
+    { path: 'services', component: __WEBPACK_IMPORTED_MODULE_10__services_services_component__["a" /* ServicesComponent */] },
+    { path: 'technology', component: __WEBPACK_IMPORTED_MODULE_11__technology_technology_component__["a" /* TechnologyComponent */] },
+    { path: 'method', component: __WEBPACK_IMPORTED_MODULE_12__method_method_component__["a" /* MethodComponent */] },
+    { path: 'examples', component: __WEBPACK_IMPORTED_MODULE_13__examples_examples_component__["a" /* ExamplesComponent */] },
+    { path: 'references', component: __WEBPACK_IMPORTED_MODULE_14__references_references_component__["a" /* ReferencesComponent */] },
+    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__["a" /* ContactComponent */] },
     { path: '',
         redirectTo: '/home',
         pathMatch: 'full'
     },
-    { path: '**', component: __WEBPACK_IMPORTED_MODULE_7__pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */] }
+    { path: '**', component: __WEBPACK_IMPORTED_MODULE_8__pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -116,29 +118,35 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__company_company_component__["a" /* CompanyComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__services_services_component__["a" /* ServicesComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__technology_technology_component__["a" /* TechnologyComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__method_method_component__["a" /* MethodComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__examples_examples_component__["a" /* ExamplesComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__references_references_component__["a" /* ReferencesComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__contact_contact_component__["a" /* ContactComponent */]
+                __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__company_company_component__["a" /* CompanyComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__services_services_component__["a" /* ServicesComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__technology_technology_component__["a" /* TechnologyComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__method_method_component__["a" /* MethodComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__examples_examples_component__["a" /* ExamplesComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__references_references_component__["a" /* ReferencesComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__pageNotFound_pageNotFound_component__["a" /* PageNotFoundComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__["a" /* ContactComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["e" /* MatToolbarModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["k" /* MatToolbarModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_material__["a" /* MatButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MatTabsModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["c" /* MatMenuModule */],
-                __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MatIconModule */]
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["j" /* MatTabsModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["e" /* MatMenuModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["c" /* MatIconModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["i" /* MatTableModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["b" /* MatFormFieldModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["d" /* MatInputModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["f" /* MatSelectModule */],
+                __WEBPACK_IMPORTED_MODULE_4__angular_material__["g" /* MatSliderModule */],
+                __WEBPACK_IMPORTED_MODULE_5__angular_common_Http__["b" /* HttpClientModule */]
             ],
             providers: [],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -223,7 +231,7 @@ var ContactComponent = (function () {
 /***/ "../../../../../src/app/examples/examples.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-tab-group>\r\n        <mat-tab label=\"Dynamic\">\r\n                <div class=\"tab-content\">\r\n                        Show large nested table of data<br/><br/>\r\n\r\n                        and more\r\n                </div>\r\n        </mat-tab>\r\n        <mat-tab label=\"Data\">\r\n                <div class=\"tab-content\">\r\n                        Show large nested table of data<br/><br/>\r\n                        Show graphs\r\n\r\n                        and more\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
+module.exports = "<mat-tab-group>\r\n        <mat-tab label=\"Table\">\r\n                <div class=\"tab-content\">\r\n                        <div>\r\n                                <mat-form-field>\r\n                                        <mat-select placeholder=\"Country\">\r\n                                                <mat-option *ngFor=\"let country of getCountries()\" [value]=\"country.code\">\r\n                                                        {{ country.name }}\r\n                                                </mat-option>\r\n                                        </mat-select>\r\n                                </mat-form-field><br/>\r\n                                <mat-form-field>\r\n                                        <input matInput (keyup)=\"applyIcaoFilter($event.target.value)\" placeholder=\"ICAO Filter\">\r\n                                </mat-form-field>\r\n                                \r\n                                <mat-slider min=0 max=10000 displayValue='Elevation' thumbLabel='Elevation' value=\"1000\"></mat-slider>\r\n                              \r\n                                <mat-table #table [dataSource]=\"dataSource\">\r\n                              \r\n                                  <!-- icao Column -->\r\n                                  <ng-container matColumnDef=\"icao\">\r\n                                    <mat-header-cell *matHeaderCellDef> ICAO </mat-header-cell>\r\n                                    <mat-cell *matCellDef=\"let element\"> {{element.icao}} </mat-cell>\r\n                                  </ng-container>\r\n                              \r\n                                  <!-- Name Column -->\r\n                                  <ng-container matColumnDef=\"name\">\r\n                                    <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>\r\n                                    <mat-cell *matCellDef=\"let element\"> {{element.name}} </mat-cell>\r\n                                  </ng-container>\r\n                              \r\n                                  <!-- City Column -->\r\n                                  <ng-container matColumnDef=\"city\">\r\n                                    <mat-header-cell *matHeaderCellDef> City </mat-header-cell>\r\n                                    <mat-cell *matCellDef=\"let element\"> {{element.city}} </mat-cell>\r\n                                  </ng-container>\r\n                              \r\n                                  <!-- Elevation Column -->\r\n                                  <ng-container matColumnDef=\"elevation\">\r\n                                    <mat-header-cell *matHeaderCellDef> Elevation </mat-header-cell>\r\n                                    <mat-cell *matCellDef=\"let element\"> {{element.elevation}} </mat-cell>\r\n                                  </ng-container>\r\n                              \r\n                                  <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\r\n                                  <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\r\n                                </mat-table>\r\n                              </div>\r\n                </div>\r\n        </mat-tab>\r\n        <mat-tab label=\"Data\">\r\n                <div class=\"tab-content\">\r\n                        Show large nested table of data<br/><br/>\r\n                        Show graphs\r\n\r\n                        and more\r\n                </div>\r\n        </mat-tab>\r\n</mat-tab-group>"
 
 /***/ }),
 
@@ -233,25 +241,71 @@ module.exports = "<mat-tab-group>\r\n        <mat-tab label=\"Dynamic\">\r\n    
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExamplesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_material__ = __webpack_require__("../../../material/esm5/material.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
 
 var ExamplesComponent = (function () {
-    function ExamplesComponent() {
+    function ExamplesComponent(http) {
+        this.http = http;
+        this.displayedColumns = ['icao', 'name', 'city', 'elevation'];
+        this.inputAltitude = 1000;
+        this.baseUrl = 'http://blue32.herokuapp.com';
+        this.dataSource = new __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatTableDataSource */](this.ELEMENT_DATA);
+        this.callCountriesService('MX', 0);
     }
+    ExamplesComponent.prototype.applyIcaoFilter = function (filterValue) {
+        filterValue = filterValue.trim(); // Remove whitespace
+        filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
+        this.dataSource.filter = filterValue;
+    };
+    ExamplesComponent.prototype.callCountriesService = function (countryCode, minElevation) {
+        var _this = this;
+        var t = this;
+        return this.http
+            .get(this.baseUrl + '/samples/airports/' + '?' + 'countryCode=' + countryCode + '&' + 'elevation=' + minElevation)
+            .catch(function (e) {
+            return __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["a" /* Observable */].throw(e);
+        })
+            .subscribe(function (c) {
+            t.ELEMENT_DATA = c;
+            t.dataSource = new __WEBPACK_IMPORTED_MODULE_1__angular_material__["h" /* MatTableDataSource */](_this.ELEMENT_DATA);
+        });
+    };
+    ExamplesComponent.prototype.getCountries = function () {
+        return countries;
+    };
     ExamplesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-examples',
             template: __webpack_require__("../../../../../src/app/examples/examples.component.html")
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
     ], ExamplesComponent);
     return ExamplesComponent;
 }());
 
+var countries = [
+    { code: 'MX', name: 'Mexico' },
+    { code: 'US', name: 'USA' },
+    { code: 'UK', name: 'United Kingdown' }
+];
 
 
 /***/ }),
